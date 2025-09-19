@@ -1,6 +1,6 @@
+TODO/*
 __pycache__/
 *.pyc
-data/processed/
 .env
 .DS_Store
 sandbox/

@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html class="ods_346f42d1-e9ad-4b26-a988-7487e0398074" lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Resultados: ACCE1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c section > table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c section > pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c div > table,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c div > pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c article > table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c article > pre,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j section > table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j section > pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j div > table,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j div > pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j article > table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j article > pre,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c p.note, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c p.fatal,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j p.note, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j p.fatal,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.c > table.layoutcontainer, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l p.note,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c p.note,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r p.note,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r table, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r pre, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r p.note,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 article, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 aside, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 details, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 figcaption, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 figure, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 footer, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 header, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 hgroup, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 nav, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 section { display: block }
+html.ods_346f42d1-e9ad-4b26-a988-7487e0398074 { font-size: 100% }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 ul, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 dd { margin: 0 0 0 40px }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 nav ul, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 img { border: 0; vertical-align: middle }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 svg:not(:root) { overflow: hidden }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 figure { margin: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 table { border-collapse: collapse; border-spacing: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 p { margin-top: 0; text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h1.heading1 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h2.heading2 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h3.heading3 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h4.heading4 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h5.heading5 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 h6.heading6 { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 span { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 table { margin-bottom: 1em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 td, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 td[class$="fixed"], .ods_346f42d1-e9ad-4b26-a988-7487e0398074 th[class$="fixed"] { white-space: pre }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 section, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 article { padding-top: 1px; padding-bottom: 8px }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .stacked-value { text-align: left; display: block }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .stacked-cell > .stacked-value, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 td.data > td.data, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 th.data > td.data, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 th.data > th.data, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 td.data > th.data, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 th.header > th.header { border: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .stacked-cell > div.data { border-width: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systitleandfootercontainer > p { margin: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .batch { display: table }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .toc { display: none }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .proc_note_group, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .proc_title_group { margin-bottom: 1em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 p.proctitle { margin: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 p.note, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 p.warning, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 p.error, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 p.fatal { display: table }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notebanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warnbanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorbanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalbanner,
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notecontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warncontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorcontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notebanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warnbanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorbanner, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalbanner { padding-right: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body > div > ol li { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .c { text-align: center }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .r { text-align: right }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .l { text-align: left }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .j { text-align: justify }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .d { text-align: right }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .b { vertical-align: bottom }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .m { vertical-align: middle }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .t { vertical-align: top }
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .aftercaption {
+    background-color: #ffffff;
+    border: 0 solid #b3b3b3;
+    color: #666666;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    padding: 0 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .batch {
+    background-color: #eeeeee;
+    border: 1.5pt solid #848484;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #4d4d4d;
+    font-family: 'Courier New', 'courier new', monospace;
+    font-size: 8pt;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .beforecaption {
+    background-color: #ffffff;
+    border: 0 solid #b3b3b3;
+    color: #666666;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    padding: 0 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .bodydate, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .byline {
+    border-width: 0;
+    color: #666666;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .bylinecontainer {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .caption, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .cell {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .container, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contentfolder, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contentitem, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contentproclabel, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contentprocname {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contents {
+    background-color: #cccccc;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contentsdate, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .contenttitle, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .continued {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .data {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .dataemphasis, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .dataemphasisfixed {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-style: italic;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .dataempty {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .datafixed {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: 'Courier New', 'courier new', monospace;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .datastrong, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .datastrongfixed {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .document {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorbanner {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorcontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .errorcontentfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .extendedpage {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalbanner {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalcontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .fatalcontentfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .folderaction {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footer, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footeremphasis, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footeremphasisfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footerempty, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footerfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footerstrong, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .footerstrongfixed {
+    background-color: #eeeeee;
+    background-image: linear-gradient(top, #E6E6E6, #CCCCCC);
+    border: 1pt solid #b3b3b3;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+    text-align: center;
+    vertical-align: middle;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .frame {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .graph {
+    border: 1px solid #848484;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .header, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headeremphasis, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headeremphasisfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headerempty, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headerfixed {
+    background-color: #eeeeee;
+    background-image: linear-gradient(top, #E6E6E6, #CCCCCC);
+    border: 1pt solid #b3b3b3;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+    text-align: center;
+    vertical-align: middle;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headersandfooters {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headerstrong, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .headerstrongfixed {
+    background-color: #eeeeee;
+    background-image: linear-gradient(top, #E6E6E6, #CCCCCC);
+    border: 1pt solid #b3b3b3;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+    text-align: center;
+    vertical-align: middle;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .indexaction {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .linecontent {
+    background-color: #ffffff;
+    border: 1pt solid #b3b3b3;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list10, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list2, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list3, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list4, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list5, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list6, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list7, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list8, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .list9, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem10, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem2, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem3, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem4, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem5, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem6, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem7, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem8, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .listitem9 {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notebanner {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notecontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .notecontentfixed {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .output {
+    border: 1.5pt solid #848484;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagebreak {
+    content: ' ';
+    height: 1em;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pageno {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pages {
+    background-color: #cccccc;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagesdate, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagesitem, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagesproclabel, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagesprocname, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .pagestitle, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .paragraph, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .parskip, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .prepage {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .proctitle, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .proctitlefixed {
+    border-width: 0;
+    color: #666666;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooter, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooteremphasis, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooteremphasisfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooterempty, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooterfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooterstrong, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowfooterstrongfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheader, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderemphasis, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderemphasisfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderempty, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderfixed, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderstrong, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .rowheaderstrongfixed {
+    background-color: #eeeeee;
+    background-image: linear-gradient(top, #E6E6E6, #CCCCCC);
+    border: 1pt solid #b3b3b3;
+    color: #4d4d4d;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 2.5pt;
+    text-align: center;
+    vertical-align: middle;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter10, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter2, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter3, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter4, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter5, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter6, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter7, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter8, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemfooter9, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle10, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle2, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle3, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle4, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle5, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle6, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle7, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle8, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systemtitle9 {
+    border-width: 0;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .systitleandfootercontainer {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .table {
+    border: 1.5pt solid #848484;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .titleandnotecontainer, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .usertext {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warnbanner {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warncontent, .ods_346f42d1-e9ad-4b26-a988-7487e0398074 .warncontentfixed {
+    color: #000000;
+    font-family: Arial, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_346f42d1-e9ad-4b26-a988-7487e0398074" class="c body">
+<h1 class="body toc">Resultados: ACCE1.sas</h1>
+<section data-name="Cancorr" data-sec-type="proc">
+<div id="web-346f42d1-e9ad-4" class="proc_title_group">
+<p class="c proctitle">Análisis de correlación canónica</p>
+</div>
+<h1 class="contentprocname toc">Procedimiento Cancorr</h1>
+<section>
+<h1 class="contentfolder toc">Análisis de correlación canónica</h1>
+<article aria-label="Canonical Correlations">
+<h1 class="contentitem toc">Canonical Correlations</h1>
+<table class="table" style="border-spacing: 0" aria-label="Canonical Correlations">
+<caption aria-label="Canonical Correlations"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m headerempty" scope="col">&#160;</th>
+<th class="c m header" rowspan="2" scope="col">Correlación<br/>canónica</th>
+<th class="c m header" rowspan="2" scope="col">Correlación<br/>canónica<br/>ajustada</th>
+<th class="c m header" rowspan="2" scope="col">Error<br/>estándar<br/>aproximado</th>
+<th class="c m header" rowspan="2" scope="col">Correlación<br/>canónica<br/>cuadrada</th>
+<th class="c m header" colspan="4" scope="colgroup">Autovalores de Inv(E)*H<br/>= CanRsq/(1-CanRsq)</th>
+<th class="c m header" colspan="5" scope="colgroup">Test&#160;de&#160;H0:&#160;Las&#160;correlaciones&#160;canónicas&#160;en&#160;la&#160;fila&#160;actual&#160;y&#160;todas&#160;las&#160;siguientes&#160;son&#160;cero</th>
+</tr>
+<tr>
+<th class="c m headerempty" scope="col">&#160;</th>
+<th class="c m header" scope="col">Autovalor</th>
+<th class="c m header" scope="col">Diferencia</th>
+<th class="c m header" scope="col">Proporción</th>
+<th class="c m header" scope="col">Acumulado</th>
+<th class="c m header" scope="col">Ratio de<br/>verosimilitud</th>
+<th class="c m header" scope="col">Valor F<br/>aproximado</th>
+<th class="c m header" scope="col">Num&#160;DF</th>
+<th class="c m header" scope="col">Den&#160;DF</th>
+<th class="r m header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">0.784797</td>
+<td class="r data">0.782158</td>
+<td class="r data">0.020160</td>
+<td class="r data">0.615906</td>
+<td class="r data">1.6035</td>
+<td class="r data">1.2873</td>
+<td class="r data">0.8223</td>
+<td class="r data">0.8223</td>
+<td class="r data">0.28325702</td>
+<td class="r data">65.76</td>
+<td class="r data">9</td>
+<td class="r data">871.43</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="r data">0.490163</td>
+<td class="r data">0.487004</td>
+<td class="r data">0.039876</td>
+<td class="r data">0.240260</td>
+<td class="r data">0.3162</td>
+<td class="r data">0.2860</td>
+<td class="r data">0.1622</td>
+<td class="r data">0.9845</td>
+<td class="r data">0.73746822</td>
+<td class="r data">29.52</td>
+<td class="r data">4</td>
+<td class="r data">718</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="r data">0.171218</td>
+<td class="r data">.</td>
+<td class="r data">0.050948</td>
+<td class="r data">0.029316</td>
+<td class="r data">0.0302</td>
+<td class="r data">&#160;</td>
+<td class="r data">0.0155</td>
+<td class="r data">1.0000</td>
+<td class="r data">0.97068442</td>
+<td class="r data">10.87</td>
+<td class="r data">1</td>
+<td class="r data">360</td>
+<td class="r data">0.0011</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-5" aria-label="Estadísticos multivariables">
+<h1 class="contentitem toc">Estadísticos multivariables</h1>
+<table class="table" style="border-spacing: 0" aria-label="Estadísticos multivariables">
+<caption aria-label="Estadísticos multivariables"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">Estadísticos de múltiples variables y aproximaciones F</th>
+</tr>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">S=3    M=-0.5    N=178</th>
+</tr>
+<tr>
+<th class="m header" scope="col">Estadístico</th>
+<th class="c m header" scope="col">Valor</th>
+<th class="c m header" scope="col">Valor F</th>
+<th class="c m header" scope="col">Num&#160;DF</th>
+<th class="c m header" scope="col">Den&#160;DF</th>
+<th class="r m header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th class="c m footer" colspan="6">NOTA: El estadístico F para la raíz mayor de Roy es un límite superior.</th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">Lambda de Wilks</th>
+<td class="r data">0.28325702</td>
+<td class="r data">65.76</td>
+<td class="r data">9</td>
+<td class="r data">871.43</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">Traza de Pillai</th>
+<td class="r data">0.88548126</td>
+<td class="r data">50.25</td>
+<td class="r data">9</td>
+<td class="r data">1080</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">Traza Hotelling-Lawley</th>
+<td class="r data">1.94997017</td>
+<td class="r data">77.41</td>
+<td class="r data">9</td>
+<td class="r data">559.4</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">Raíz más grande de Roy</th>
+<td class="r data">1.60353025</td>
+<td class="r data">192.42</td>
+<td class="r data">3</td>
+<td class="r data">360</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-6" class="proc_title_group">
+<p class="c proctitle">Análisis de correlación canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Coeficientes canónicos planos</h1>
+<article aria-label="Para climatic condition’s">
+<h1 class="contentitem toc">Para climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="Para climatic condition’s">
+<caption aria-label="Para climatic condition’s"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Coeficientes canónicos planos para climatic condition’s</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">V1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">VViento</th>
+<th class="data">VViento</th>
+<td class="r data">0.5221910497</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">HAire10</th>
+<th class="data">HAire10</th>
+<td class="r data" style="white-space: nowrap">-0.182916163</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">TAire10</th>
+<th class="data">TAire10</th>
+<td class="r data" style="white-space: nowrap">-0.313841348</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-7" aria-label="Para atmospheric pollutant">
+<h1 class="contentitem toc">Para atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="Para atmospheric pollutant">
+<caption aria-label="Para atmospheric pollutant"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Coeficientes canónicos planos para atmospheric pollutant</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">W1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">O3</th>
+<th class="data">O3</th>
+<td class="r data">0.1376670363</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM2.5</th>
+<th class="data">PM2.5</th>
+<td class="r data" style="white-space: nowrap">-0.169837263</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM10</th>
+<th class="data">PM10</th>
+<td class="r data">0.1150696697</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-8" class="proc_title_group">
+<p class="c proctitle">Análisis de correlación canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Coeficientes canónicos estandarizados</h1>
+<article aria-label="Para climatic condition’s">
+<h1 class="contentitem toc">Para climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="Para climatic condition’s">
+<caption aria-label="Para climatic condition’s"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Coeficientes canónicos estandarizados para climatic condition’s</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">V1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">VViento</th>
+<th class="data">VViento</th>
+<td class="r data">0.1348</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">HAire10</th>
+<th class="data">HAire10</th>
+<td class="r data" style="white-space: nowrap">-1.1348</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">TAire10</th>
+<th class="data">TAire10</th>
+<td class="r data" style="white-space: nowrap">-0.3580</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-9" aria-label="Para atmospheric pollutant">
+<h1 class="contentitem toc">Para atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="Para atmospheric pollutant">
+<caption aria-label="Para atmospheric pollutant"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Coeficientes canónicos estandarizados para atmospheric pollutant</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">W1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">O3</th>
+<th class="data">O3</th>
+<td class="r data">1.0937</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM2.5</th>
+<th class="data">PM2.5</th>
+<td class="r data" style="white-space: nowrap">-0.8624</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM10</th>
+<th class="data">PM10</th>
+<td class="r data">0.7595</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-10" class="proc_title_group">
+<p class="c proctitle">Estructura canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Estructura canónica</h1>
+<article aria-label="climatic condition’s y sus variables canónicas">
+<h1 class="contentitem toc">climatic condition’s y sus variables canónicas</h1>
+<table class="table" style="border-spacing: 0" aria-label="climatic condition’s y sus variables canónicas">
+<caption aria-label="climatic condition’s y sus variables canónicas"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones entre climatic condition’s y sus variables canónicas</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">V1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">VViento</th>
+<th class="data">VViento</th>
+<td class="r data">0.5998</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">HAire10</th>
+<th class="data">HAire10</th>
+<td class="r data" style="white-space: nowrap">-0.9611</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">TAire10</th>
+<th class="data">TAire10</th>
+<td class="r data">0.4789</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-11" aria-label="atmospheric pollutant y sus variables canónicas">
+<h1 class="contentitem toc">atmospheric pollutant y sus variables canónicas</h1>
+<table class="table" style="border-spacing: 0" aria-label="atmospheric pollutant y sus variables canónicas">
+<caption aria-label="atmospheric pollutant y sus variables canónicas"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones entre atmospheric pollutant y sus variables canónicas</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">W1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">O3</th>
+<th class="data">O3</th>
+<td class="r data">0.9651</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM2.5</th>
+<th class="data">PM2.5</th>
+<td class="r data">0.4005</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM10</th>
+<th class="data">PM10</th>
+<td class="r data">0.3818</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-12" aria-label="climatic condition’s y las variables canónicas de atmospheric pollutant">
+<h1 class="contentitem toc">climatic condition’s y las variables canónicas de atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="climatic condition’s y las variables canónicas de atmospheric pollutant">
+<caption aria-label="climatic condition’s y las variables canónicas de atmospheric pollutant"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones entre climatic condition’s y las variables canónicas de atmospheric pollutant</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">W1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">VViento</th>
+<th class="data">VViento</th>
+<td class="r data">0.4707</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">HAire10</th>
+<th class="data">HAire10</th>
+<td class="r data" style="white-space: nowrap">-0.7542</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">TAire10</th>
+<th class="data">TAire10</th>
+<td class="r data">0.3759</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-13" aria-label="atmospheric pollutant y las variables canónicas de climatic condition’s">
+<h1 class="contentitem toc">atmospheric pollutant y las variables canónicas de climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="atmospheric pollutant y las variables canónicas de climatic condition’s">
+<caption aria-label="atmospheric pollutant y las variables canónicas de climatic condition’s"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones entre atmospheric pollutant y las variables canónicas de climatic condition’s</th>
+</tr>
+<tr>
+<th class="c m headerempty" colspan="2" scope="colgroup">&#160;</th>
+<th class="r m header" scope="col">V1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">O3</th>
+<th class="data">O3</th>
+<td class="r data">0.7574</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM2.5</th>
+<th class="data">PM2.5</th>
+<td class="r data">0.3143</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM10</th>
+<th class="data">PM10</th>
+<td class="r data">0.2996</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-14" class="proc_title_group">
+<p class="c proctitle">Análisis de redundancia canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Análisis de redundancia canónica</h1>
+<section>
+<h1 class="contentfolder toc">Varianza plana</h1>
+<article aria-label="Varianza plana de climatic condition’s">
+<h1 class="contentitem toc">Varianza plana de climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="Varianza plana de climatic condition’s">
+<caption aria-label="Varianza plana de climatic condition’s"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">Varianza plana de climatic condition’s explicado por</th>
+</tr>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Número de la variable canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>propias</th>
+<th class="r m header" rowspan="2" scope="col">R-cuadrado<br/>canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>opuestas</th>
+</tr>
+<tr>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">0.9000</td>
+<td class="r data">0.9000</td>
+<td class="r data">0.6159</td>
+<td class="r data">0.5543</td>
+<td class="r data">0.5543</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-15" aria-label="Varianza plana de atmospheric pollutant">
+<h1 class="contentitem toc">Varianza plana de atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="Varianza plana de atmospheric pollutant">
+<caption aria-label="Varianza plana de atmospheric pollutant"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">Varianza plana de atmospheric pollutant explicado por</th>
+</tr>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Número de la variable canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>propias</th>
+<th class="r m header" rowspan="2" scope="col">R-cuadrado<br/>canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>opuestas</th>
+</tr>
+<tr>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">0.5229</td>
+<td class="r data">0.5229</td>
+<td class="r data">0.6159</td>
+<td class="r data">0.3221</td>
+<td class="r data">0.3221</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-16" class="proc_title_group">
+<p class="c proctitle">Análisis de redundancia canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Varianza estándar</h1>
+<article aria-label="de climatic condition’s">
+<h1 class="contentitem toc">de climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="de climatic condition’s">
+<caption aria-label="de climatic condition’s"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">Varianza estandarizada de climatic condition’s explicada por</th>
+</tr>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Número de la variable canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>propias</th>
+<th class="r m header" rowspan="2" scope="col">R-cuadrado<br/>canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>opuestas</th>
+</tr>
+<tr>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">0.5043</td>
+<td class="r data">0.5043</td>
+<td class="r data">0.6159</td>
+<td class="r data">0.3106</td>
+<td class="r data">0.3106</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-17" aria-label="de atmospheric pollutant">
+<h1 class="contentitem toc">de atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="de atmospheric pollutant">
+<caption aria-label="de atmospheric pollutant"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="6" scope="colgroup">Varianza estandarizada de atmospheric pollutant explicada por</th>
+</tr>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Número de la variable canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>propias</th>
+<th class="r m header" rowspan="2" scope="col">R-cuadrado<br/>canónica</th>
+<th class="c m header" colspan="2" scope="colgroup">Variables canónicas<br/>opuestas</th>
+</tr>
+<tr>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+<th class="r m header" scope="col">Proporción</th>
+<th class="r m header" scope="col">Proporción<br/>acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">0.4125</td>
+<td class="r data">0.4125</td>
+<td class="r data">0.6159</td>
+<td class="r data">0.2541</td>
+<td class="r data">0.2541</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<div class="pagebreak"> </div>
+<div id="web-346f42d1-e9ad-18" class="proc_title_group">
+<p class="c proctitle">Análisis de redundancia canónica</p>
+</div>
+<section>
+<h1 class="contentfolder toc">Correlaciones múltiples cuadradas</h1>
+<article aria-label="climatic condition’s y las primeras variables canónicas M de atmospheric pollutant">
+<h1 class="contentitem toc">climatic condition’s y las primeras variables canónicas M de atmospheric pollutant</h1>
+<table class="table" style="border-spacing: 0" aria-label="climatic condition’s y las primeras variables canónicas M de atmospheric pollutant">
+<caption aria-label="climatic condition’s y las primeras variables canónicas M de atmospheric pollutant"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones múltiples cuadradas entre climatic condition’s y las primeras variables canónicas M de atmospheric pollutant</th>
+</tr>
+<tr>
+<th class="m header" scope="col">M</th>
+<th class="c m headerempty" scope="col">&#160;</th>
+<th class="r m header" scope="col">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">VViento</th>
+<th class="data">VViento</th>
+<td class="r data">0.2216</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">HAire10</th>
+<th class="data">HAire10</th>
+<td class="r data">0.5689</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">TAire10</th>
+<th class="data">TAire10</th>
+<td class="r data">0.1413</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="web-346f42d1-e9ad-19" aria-label="atmospheric pollutant y las primeras variables canónicas M de climatic condition’s">
+<h1 class="contentitem toc">atmospheric pollutant y las primeras variables canónicas M de climatic condition’s</h1>
+<table class="table" style="border-spacing: 0" aria-label="atmospheric pollutant y las primeras variables canónicas M de climatic condition’s">
+<caption aria-label="atmospheric pollutant y las primeras variables canónicas M de climatic condition’s"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="3" scope="colgroup">Correlaciones múltiples cuadradas entre atmospheric pollutant y las primeras variables canónicas M de climatic condition’s</th>
+</tr>
+<tr>
+<th class="m header" scope="col">M</th>
+<th class="c m headerempty" scope="col">&#160;</th>
+<th class="r m header" scope="col">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="m rowheader" scope="row">O3</th>
+<th class="data">O3</th>
+<td class="r data">0.5736</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM2.5</th>
+<th class="data">PM2.5</th>
+<td class="r data">0.0988</td>
+</tr>
+<tr>
+<th class="m rowheader" scope="row">PM10</th>
+<th class="data">PM10</th>
+<td class="r data">0.0898</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+</section>
+<section data-name="SGRender" data-sec-type="proc">
+<div class="pagebreak"> </div>
+<h1 class="contentprocname toc">Procedimiento SGRender</h1>
+<article id="web-346f42d1-e9ad-20" aria-label="Procedimiento SGRender">
+<h1 class="contentitem toc">Procedimiento SGRender</h1>
+<div class="c">
+<script type="text/ecmascript">
+var SVG_web_346f42d1_e9ad_20_SVGRoot = null;
+var SVG_web_346f42d1_e9ad_20_TrueCoords = null;
+var SVG_web_346f42d1_e9ad_20_singleTip = null;
+var SVG_web_346f42d1_e9ad_20_singleBox = null;
+var SVG_web_346f42d1_e9ad_20_singleText = null;
+var SVG_web_346f42d1_e9ad_20_tiptspan = null;
+var SVG_web_346f42d1_e9ad_20_attrScale = 1;
+var SVG_web_346f42d1_e9ad_20_rightEdge = null;
+var SVG_web_346f42d1_e9ad_20_SVGHeight = null;
+var SVG_web_346f42d1_e9ad_20_SVGWidth = null;
+function SVG_web_346f42d1_e9ad_20_Init(anchor) {
+   SVG_web_346f42d1_e9ad_20_SVGRoot = document.getElementById(anchor);
+   SVG_web_346f42d1_e9ad_20_TrueCoords = SVG_web_346f42d1_e9ad_20_SVGRoot.createSVGPoint();
+   SVG_web_346f42d1_e9ad_20_singleTip = document.getElementById(anchor + '_singleTip1');
+   SVG_web_346f42d1_e9ad_20_singleBox = document.getElementById(anchor + '_singleBox1');
+   SVG_web_346f42d1_e9ad_20_singleText = document.getElementById(anchor + '_singleText1');
+   SVG_web_346f42d1_e9ad_20_tiptspan = document.getElementById(anchor + '_tiptspan1');
+   SVG_web_346f42d1_e9ad_20_tiptspan.firstChild.nodeValue = null;
+   SVG_web_346f42d1_e9ad_20_SVGRoot.addEventListener('mousemove', SVG_web_346f42d1_e9ad_20_ShowTooltip, false);
+   SVG_web_346f42d1_e9ad_20_SVGRoot.addEventListener('mouseout', SVG_web_346f42d1_e9ad_20_HideTooltip, false);
+   SVG_web_346f42d1_e9ad_20_SVGHeight = SVG_web_346f42d1_e9ad_20_SVGRoot.getAttributeNS(null, "height");
+   SVG_web_346f42d1_e9ad_20_SVGWidth = SVG_web_346f42d1_e9ad_20_SVGRoot.getAttributeNS(null, "width");
+   if (!isNaN(parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight)) && !isNaN(parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth)))
+      SVG_web_346f42d1_e9ad_20_GetHW();
+}
+function SVG_web_346f42d1_e9ad_20_GetHW()
+{
+    if (SVG_web_346f42d1_e9ad_20_SVGWidth != null && SVG_web_346f42d1_e9ad_20_SVGWidth != "") {
+       if (SVG_web_346f42d1_e9ad_20_SVGWidth.match(/%/)) {
+          var factor = parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth.replace(/%/,""))/100;
+          SVG_web_346f42d1_e9ad_20_SVGWidth = window.innerWidth * factor;
+       }
+       else if (SVG_web_346f42d1_e9ad_20_SVGWidth.match(/in/))
+          SVG_web_346f42d1_e9ad_20_SVGWidth = parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth.replace(/in/,""))*96;
+       else if (SVG_web_346f42d1_e9ad_20_SVGWidth.match(/cm/))
+          SVG_web_346f42d1_e9ad_20_SVGWidth = parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth.replace(/in/,""))*96/2.54;
+       else
+           SVG_web_346f42d1_e9ad_20_SVGWidth = parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth);
+    }
+    if (SVG_web_346f42d1_e9ad_20_SVGHeight != null && SVG_web_346f42d1_e9ad_20_SVGHeight != "") {
+       if (SVG_web_346f42d1_e9ad_20_SVGHeight.match(/%/)) {
+          var factor = parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight.replace(/%/,""))/100;
+          SVG_web_346f42d1_e9ad_20_SVGHeight = window.innerHeight * factor;
+       }
+       else if (SVG_web_346f42d1_e9ad_20_SVGHeight.match(/in/))
+          SVG_web_346f42d1_e9ad_20_SVGHeight = parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight.replace(/in/,""))*96;
+       else if (SVG_web_346f42d1_e9ad_20_SVGHeight.match(/cm/))
+          SVG_web_346f42d1_e9ad_20_SVGHeight = parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight.replace(/in/,""))*96/2.54;
+       else
+           SVG_web_346f42d1_e9ad_20_SVGHeight = parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight);
+    }
+}
+function SVG_web_346f42d1_e9ad_20_GetScaleFactors(evt)
+{
+   var zoomFactor = 1;
+   windowWidth  = (top.innerWidth==undefined)  ? window.innerWidth  : top.innerWidth;
+   windowHeight = (top.innerHeight==undefined) ? window.innerHeight : top.innerHeight;
+   SVG_web_346f42d1_e9ad_20_rightEdge = (SVG_web_346f42d1_e9ad_20_SVGWidth) ? SVG_web_346f42d1_e9ad_20_SVGWidth - window.pageXOffset : windowWidth;
+   if (parseFloat(SVG_web_346f42d1_e9ad_20_SVGWidth) > 0 || parseFloat(SVG_web_346f42d1_e9ad_20_SVGHeight) > 0)
+      var tipScale = 1.5625;
+   else {
+      var tipXScale  = (screen.width/windowWidth) / SVG_web_346f42d1_e9ad_20_SVGRoot.currentScale;
+      var tipYScale  = (screen.height/windowHeight) / SVG_web_346f42d1_e9ad_20_SVGRoot.currentScale;
+      var tipScale   = (tipXScale + tipYScale)/2.0;
+   }
+   SVG_web_346f42d1_e9ad_20_attrScale = tipScale;
+   if (navigator.appName == 'Adobe SVG Viewer') {
+      if (screen.deviceXDPI != null && screen.logicalXDPI != null)
+         zoomFactor = screen.deviceXDPI/screen.logicalXDPI;
+      SVG_web_346f42d1_e9ad_20_attrScale = zoomFactor*tipScale;
+   }
+   else if (navigator.userAgent != null && navigator.userAgent != '') {
+      var ua = navigator.userAgent.toLowerCase();
+      if (ua.indexOf("msie") != -1 || ua.indexOf("trident") != -1) {
+         zoomFactor = screen.deviceXDPI/screen.logicalXDPI;
+         SVG_web_346f42d1_e9ad_20_attrScale = tipScale/zoomFactor;
+         SVG_web_346f42d1_e9ad_20_rightEdge /= zoomFactor;
+      }
+      else if (ua.indexOf("ipad") != -1) {
+         zoomFactor = SVG_web_346f42d1_e9ad_20_SVGRoot.clientWidth / window.innerWidth;
+         SVG_web_346f42d1_e9ad_20_attrScale = 1.5 / zoomFactor;
+         SVG_web_346f42d1_e9ad_20_rightEdge /= zoomFactor;
+      }
+      else if (ua.indexOf("opera") != -1)
+         SVG_web_346f42d1_e9ad_20_attrScale = tipScale;
+      else if (ua.indexOf("firefox") != -1)
+         SVG_web_346f42d1_e9ad_20_attrScale = tipScale;
+      else {
+         if (SVG_web_346f42d1_e9ad_20_SVGWidth > 0 || SVG_web_346f42d1_e9ad_20_SVGHeight > 0)
+            zoomFactor = 1;
+         else
+            zoomFactor = parseInt(document.defaultView.getComputedStyle(SVG_web_346f42d1_e9ad_20_SVGRoot, null).width,10)/
+                                  SVG_web_346f42d1_e9ad_20_SVGRoot.clientWidth;
+         SVG_web_346f42d1_e9ad_20_attrScale = tipScale/zoomFactor;
+         SVG_web_346f42d1_e9ad_20_rightEdge *= zoomFactor;
+      }
+   }
+}
+function SVG_web_346f42d1_e9ad_20_GetTrueCoords(evt)
+{
+   var trans = SVG_web_346f42d1_e9ad_20_SVGRoot.currentTranslate;
+   var scale = SVG_web_346f42d1_e9ad_20_SVGRoot.currentScale;
+   SVG_web_346f42d1_e9ad_20_GetScaleFactors();
+   var p1    = SVG_web_346f42d1_e9ad_20_SVGRoot.createSVGPoint();
+   var p2;
+      var m = SVG_web_346f42d1_e9ad_20_SVGRoot.getScreenCTM();
+      if (navigator.userAgent.toLowerCase().indexOf("ipad") != -1) {
+         p1.x = evt.clientX + window.pageXOffset;
+         p1.y = evt.clientY + window.pageYOffset;
+      }
+      else {
+      p1.x = evt.clientX;
+      p1.y = evt.clientY;
+      }
+      p2 = p1.matrixTransform(m.inverse());
+   SVG_web_346f42d1_e9ad_20_TrueCoords.x = Math.round(p2.x*100) / 100;
+   SVG_web_346f42d1_e9ad_20_TrueCoords.y = Math.round(p2.y*100) / 100;
+}
+function SVG_web_346f42d1_e9ad_20_HideTooltip( evt )
+{
+   SVG_web_346f42d1_e9ad_20_tiptspan.firstChild.nodeValue = null;
+   SVG_web_346f42d1_e9ad_20_singleTip.setAttributeNS(null, 'visibility', 'hidden');
+}
+function SVG_web_346f42d1_e9ad_20_ShowTooltip( evt )
+{
+   SVG_web_346f42d1_e9ad_20_GetTrueCoords( evt );
+   var targetElement = evt.target;
+   var tspanCount = targetElement.getElementsByTagName('desc').length;
+   if (tspanCount == 1) {
+      var targetTspan = targetElement.getElementsByTagName('desc').item(0);
+      if ( targetTspan) {
+         if (targetTspan.firstChild != null)
+            SVG_web_346f42d1_e9ad_20_tiptspan.firstChild.nodeValue = targetTspan.firstChild.nodeValue; }
+   }
+   if ( null != SVG_web_346f42d1_e9ad_20_tiptspan.firstChild.nodeValue &&  '' != SVG_web_346f42d1_e9ad_20_tiptspan.firstChild.nodeValue.trim() )
+   {
+      var outline = SVG_web_346f42d1_e9ad_20_singleText.getBBox();
+      SVG_web_346f42d1_e9ad_20_singleBox.setAttributeNS(null, 'transform', 'scale(' + SVG_web_346f42d1_e9ad_20_attrScale + ',' + SVG_web_346f42d1_e9ad_20_attrScale + ')' );
+      SVG_web_346f42d1_e9ad_20_singleText.setAttributeNS(null, 'transform', 'scale(' + SVG_web_346f42d1_e9ad_20_attrScale + ',' + SVG_web_346f42d1_e9ad_20_attrScale + ')' );
+      SVG_web_346f42d1_e9ad_20_singleTip.setAttributeNS(null, 'visibility', 'visible');
+      if (evt.clientX + ((outline.width + 9)/0.95999) * SVG_web_346f42d1_e9ad_20_attrScale > SVG_web_346f42d1_e9ad_20_rightEdge) {
+         var xPos = SVG_web_346f42d1_e9ad_20_TrueCoords.x - parseInt((outline.width + 9)*SVG_web_346f42d1_e9ad_20_attrScale);
+         if (xPos < 0)
+            xPos = 0;
+      }
+      else
+         var xPos = SVG_web_346f42d1_e9ad_20_TrueCoords.x;
+      if (SVG_web_346f42d1_e9ad_20_TrueCoords.y < 19) {
+         var yPos = SVG_web_346f42d1_e9ad_20_TrueCoords.y + ((outline.height + 19)/0.95999)*SVG_web_346f42d1_e9ad_20_attrScale;
+         if (yPos > windowHeight)
+            yPos = SVG_web_346f42d1_e9ad_20_TrueCoords.y - parseInt((outline.height + 9)*SVG_web_346f42d1_e9ad_20_attrScale);
+      }
+      else
+         var yPos = SVG_web_346f42d1_e9ad_20_TrueCoords.y - parseInt((outline.height + 9)*SVG_web_346f42d1_e9ad_20_attrScale);
+      if (Number(outline.width == 0))
+         SVG_web_346f42d1_e9ad_20_singleBox.setAttributeNS(null, 'width', outline.width);
+      else
+         SVG_web_346f42d1_e9ad_20_singleBox.setAttributeNS(null, 'width', outline.width + 9);
+      SVG_web_346f42d1_e9ad_20_singleBox.setAttributeNS(null, 'height', outline.height + 9);
+      SVG_web_346f42d1_e9ad_20_singleTip.setAttributeNS(null, 'transform', 'translate(' + xPos + ',' + yPos + ')');
+   }
+}
+</script>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" baseProfile="full" version="1.1" id="SVG_web_346f42d1_e9ad_20" onload='SVG_web_346f42d1_e9ad_20_Init("SVG_web_346f42d1_e9ad_20")' viewBox="-1 -1 577 577" height="576" width="576">
+<desc id="desc_SVG_web_346f42d1_e9ad_20">Procedimiento SGRender</desc>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_clipPage1">
+<rect x="-1" y="-1" width="577" height="577"></rect>
+</clipPath>
+</defs>
+<g id="SVG_web_346f42d1_e9ad_20_Page1" clip-path="url(#SVG_web_346f42d1_e9ad_20_clipPage1)">
+<g transform=" scale(1, 1)">
+<rect x="0" y="0" width="575" height="575" style="fill: #FFFFFF; "></rect>
+<rect x="0" y="0" width="575" height="575" style="fill: #FFFFFF; "></rect>
+<rect x="0" y="0" width="575" height="575" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></rect>
+<g transform="matrix(1, 0, 0, 1, 11, 11)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath0">
+<rect x="-1" y="-1" width="555" height="555" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath0)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath1">
+<rect x="-1" y="-1" width="555" height="24" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath1)">
+<g transform="matrix(1, 0, 0, 1, 150, 0)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath2">
+<rect x="-1" y="-1" width="255" height="19" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath2)">
+<text textLength="247" lengthAdjust="spacingAndGlyphs" x="3.5" y="13.5791" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 15px; font-weight: bold; white-space: pre; ">&#x000050;&#x000075;&#x00006E;&#x000074;&#x000075;&#x000061;&#x000063;&#x000069;&#x00006F;&#x00006E;&#x000065;&#x000073;&#x000020;&#x000064;&#x000065;&#x000020;&#x000076;&#x000061;&#x000072;&#x000069;&#x000061;&#x000062;&#x00006C;&#x000065;&#x000020;&#x000063;&#x000061;&#x00006E;&#x0000F3;&#x00006E;&#x000069;&#x000063;&#x000061;</text>
+</g>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 23)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath3">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath3)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath4">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath4)">
+<rect x="50.31834" y="128.25845" width="225.18704" height="225.57518" style="fill: #FFFFFF; "></rect>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath5">
+<rect x="49" y="127" width="228" height="228" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath5)">
+<circle cx="152.30477" cy="254.37907" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="166.65985" cy="255.44596" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="161.62293" cy="287.70693" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.40677" cy="294.4035" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="149.76997" cy="265.92105" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.80793" cy="259.26856" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.38536" cy="260.15841" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.32155" cy="306.41404" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.63422" cy="248.28375" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="176.61869" cy="215.54356" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="191.70151" cy="239.98818" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="208.27321" cy="223.92485" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="163.80202" cy="264.28746" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="141.62915" cy="270.91495" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="169.59032" cy="242.38944" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="187.77465" cy="242.04636" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="193.13598" cy="233.61792" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="182.10621" cy="219.81898" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="184.79192" cy="231.45321" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="218.30659" cy="237.63858" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="197.16621" cy="219.22921" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="188.04052" cy="198.96776" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="154.88039" cy="218.63023" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="120.62983" cy="272.53647" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="123.15919" cy="274.99017" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.16417" cy="267.4216" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.4634" cy="313.08101" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="137.35675" cy="281.04525" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="128.84275" cy="306.66821" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="149.54634" cy="254.00243" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.20546" cy="264.35676" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.60358" cy="258.13003" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="124.04751" cy="303.19328" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.68827" cy="284.1696" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="138.49728" cy="261.83692" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="138.36142" cy="252.26296" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="161.04855" cy="242.26234" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="154.64322" cy="260.28806" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="97.79803" cy="260.82569" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="113.36047" cy="251.56586" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="110.94183" cy="274.15264" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="110.80381" cy="294.24286" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.4429" cy="256.75524" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="138.21832" cy="247.41026" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="136.71483" cy="266.35189" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="150.62549" cy="267.12273" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="123.92593" cy="263.13802" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="94.26101" cy="270.73282" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.8023" cy="293.18379" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.6495" cy="254.7009" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.21272" cy="274.09265" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.96117" cy="280.73132" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="106.09419" cy="277.17208" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="109.12503" cy="290.13752" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="105.3136" cy="274.50428" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.55127" cy="259.27949" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.91621" cy="260.59226" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="109.23607" cy="274.34632" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.27038" cy="263.63831" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139.40734" cy="261.8598" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="137.61632" cy="274.71469" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="95.28051" cy="286.79479" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="101.71119" cy="283.32538" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="96.41056" cy="293.96027" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="121.8766" cy="271.70823" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="94.90284" cy="303.2377" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.28549" cy="244.21802" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="120.39194" cy="276.1976" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="110.29595" cy="286.26254" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.13627" cy="266.50092" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="108.17364" cy="279.59155" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="75.81825" cy="291.70886" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="84.79586" cy="290.97336" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="99.44858" cy="297.77781" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.66729" cy="283.30077" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="78.04975" cy="291.05586" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.32312" cy="291.58459" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="86.95405" cy="303.48132" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="102.38417" cy="314.36665" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="109.51536" cy="288.14744" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="107.50946" cy="280.81843" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="98.53455" cy="269.41654" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="107.04729" cy="298.48775" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="96.0913" cy="318.52324" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="91.10269" cy="294.35564" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="96.86111" cy="308.99493" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="95.09656" cy="300.84949" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="100.68978" cy="296.0852" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.64268" cy="261.37278" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.35084" cy="259.65607" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="123.70198" cy="277.00006" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="90.81864" cy="298.4676" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="94.10854" cy="297.0886" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="108.0742" cy="277.95435" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.46662" cy="288.85438" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="129.32859" cy="265.12764" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="120.40443" cy="246.86377" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="101.24672" cy="259.88423" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="101.26706" cy="297.69019" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="88.94192" cy="298.37421" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="88.45548" cy="319.11649" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="84.30651" cy="302.65074" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.60213" cy="289.00605" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="109.00158" cy="288.81627" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="89.48775" cy="313.59921" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.62553" cy="303.79482" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.59786" cy="275.9342" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="100.60677" cy="304.26864" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="79.80796" cy="305.81252" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="108.19332" cy="277.40869" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="97.72182" cy="281.37129" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="105.11142" cy="290.0864" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="81.4413" cy="309.46701" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="111.67171" cy="275.46512" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.0575" cy="283.98612" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="105.97399" cy="296.24312" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="105.21908" cy="302.85907" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="104.86754" cy="307.42965" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="101.00419" cy="324.06676" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="102.53384" cy="317.86522" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="100.39542" cy="309.08795" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139.07205" cy="276.01978" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="145.71967" cy="257.07829" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="110.55754" cy="301.85249" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="99.64514" cy="299.39911" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="96.21929" cy="305.95265" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="106.66841" cy="303.86416" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="150.93971" cy="280.10223" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.68016" cy="283.87327" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="142.5543" cy="260.87628" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.57572" cy="289.54901" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="152.13953" cy="270.3128" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.28855" cy="279.59798" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="157.41437" cy="259.80507" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="208.79816" cy="217.10544" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="188.66664" cy="228.2285" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="212.33141" cy="224.99792" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="194.64072" cy="176.08367" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="156.64019" cy="229.87955" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="126.19089" cy="271.07161" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="99.07715" cy="308.22065" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="126.34097" cy="294.01759" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="106.95395" cy="294.49211" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="135.15739" cy="283.88514" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.54013" cy="298.28945" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.74684" cy="276.36744" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="118.23075" cy="284.95207" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="141.91819" cy="286.45562" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="85.33301" cy="317.32284" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="114.10553" cy="297.84884" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="79.06429" cy="294.31261" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="129.05012" cy="270.88633" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="137.36097" cy="278.83201" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.75342" cy="304.5908" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="149.04176" cy="311.66302" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="153.42055" cy="269.30459" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="163.20151" cy="268.54548" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="136.87773" cy="276.05768" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="126.14717" cy="284.80191" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.22303" cy="292.9787" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="112.72515" cy="277.46677" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="138.89441" cy="272.15019" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.88358" cy="284.81345" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="158.78229" cy="293.51131" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="129.22292" cy="265.26893" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="129.63509" cy="258.45175" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.27768" cy="264.83741" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="150.54677" cy="261.56561" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="118.09815" cy="265.96861" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="121.67804" cy="252.60718" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="135.09113" cy="247.37411" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="133.80831" cy="265.8893" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="108.60709" cy="251.42286" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="167.33755" cy="284.67758" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="173.81172" cy="224.34528" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="156.28501" cy="266.8411" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="195.42829" cy="252.60718" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="175.82962" cy="247.37411" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="149.37342" cy="265.8893" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="167.80349" cy="251.42286" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="153.08748" cy="284.67758" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="168.62434" cy="224.34528" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="145.16924" cy="265.38483" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.68696" cy="283.7012" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.97338" cy="301.3575" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="114.17623" cy="313.65383" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.8034" cy="289.55845" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="117.55892" cy="306.84963" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="89.23591" cy="333.285" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="92.64633" cy="328.86457" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="77.15656" cy="346.34774" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="136.59543" cy="260.72528" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="87.99289" cy="340.95637" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="120.73582" cy="291.36816" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="117.71664" cy="296.46608" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="118.7526" cy="280.79779" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="113.55459" cy="292.7986" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.40663" cy="296.65087" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="180.98272" cy="245.32029" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.37634" cy="244.28556" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="163.55534" cy="267.06413" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="162.52844" cy="250.22468" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="100.312" cy="292.95186" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="104.77534" cy="324.90188" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.01781" cy="271.3452" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="94.79317" cy="278.68723" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="144.70142" cy="241.36276" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="163.93332" cy="224.21571" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="177.83949" cy="229.79222" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="154.19755" cy="237.33537" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="191.55149" cy="225.75068" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="159.90209" cy="228.26303" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="196.01101" cy="218.0934" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="203.54129" cy="218.83319" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="225.7222" cy="215.46368" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="198.97964" cy="204.61474" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="219.84833" cy="177.14628" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="212.71888" cy="187.65365" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="208.13408" cy="170.13876" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="194.65778" cy="211.35028" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="212.10059" cy="173.31057" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="237.99893" cy="142.10422" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="242.17216" cy="137.9859" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="203.42222" cy="135.74436" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="173.52166" cy="197.50678" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="169.09145" cy="254.34304" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="179.46704" cy="246.10362" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.92081" cy="236.87835" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="180.26007" cy="183.7268" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.17983" cy="202.24726" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139" cy="258.04179" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="126.66696" cy="250.84276" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139.02632" cy="260.18787" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.56855" cy="263.20338" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="127.92566" cy="271.93586" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="128.55709" cy="271.90628" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.54053" cy="276.02779" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.67739" cy="281.08286" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="124.76013" cy="284.84201" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.69946" cy="304.69096" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="150.41269" cy="240.28299" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.7213" cy="279.02892" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="108.94289" cy="263.64996" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="122.55984" cy="309.15199" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.47589" cy="276.39043" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="106.64044" cy="304.45041" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.77495" cy="290.84128" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="150.03788" cy="266.24428" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="145.35871" cy="248.96177" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.58505" cy="249.11453" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.04311" cy="277.65106" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="126.98644" cy="259.1024" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.42254" cy="271.7363" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.19341" cy="231.9914" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.37109" cy="230.1843" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="97.86217" cy="284.21723" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="99.60144" cy="291.77601" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.03443" cy="297.609" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="100.94446" cy="302.68625" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="83.38764" cy="303.76718" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="118.73033" cy="288.56721" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="124.96959" cy="272.35974" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="127.21114" cy="268.74591" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="98.36986" cy="299.70066" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="110.45063" cy="306.22744" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="128.3741" cy="287.26027" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="137.90323" cy="283.53855" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="99.08659" cy="333.61243" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="93.84069" cy="291.40921" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="102.13488" cy="279.5862" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="104.22043" cy="291.45845" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="91.18796" cy="306.95169" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="112.97704" cy="303.08148" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="87.4911" cy="315.37071" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="93.56589" cy="310.00835" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="121.13318" cy="295.58519" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="69.11795" cy="293.89402" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="133.33045" cy="273.62086" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.88615" cy="310.18156" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.21975" cy="295.01231" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="107.25052" cy="298.62438" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="125.09412" cy="293.82117" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="127.7813" cy="279.4223" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="120.23597" cy="293.83248" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.47461" cy="282.63415" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="167.75817" cy="301.32077" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="133.2837" cy="289.36894" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139.83965" cy="255.09259" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="127.89658" cy="284.96465" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.64191" cy="296.15071" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="117.81281" cy="301.76684" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.83194" cy="285.09907" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="95.92437" cy="311.70106" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="130.01199" cy="303.91672" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="141.41563" cy="245.02934" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.98416" cy="275.24817" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="151.21437" cy="276.43422" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="155.53579" cy="284.80816" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="168.57522" cy="264.26215" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="191.00764" cy="245.62934" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="152.22545" cy="290.2679" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="136.12964" cy="276.80729" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.9031" cy="278.05352" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="175.73424" cy="273.56844" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="156.97708" cy="268.46682" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="148.35871" cy="293.2815" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="96.90562" cy="294.23399" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="135.4207" cy="277.29617" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.80199" cy="282.02114" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="133.05973" cy="296.80134" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="143.6409" cy="278.33145" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="158.31113" cy="282.32256" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="142.58562" cy="279.93536" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="152.56522" cy="273.66434" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="141.75346" cy="264.49626" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.39054" cy="297.70596" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.24507" cy="260.92119" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.61288" cy="257.36706" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="154.91075" cy="257.98559" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="164.90789" cy="247.33959" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="115.54633" cy="292.7709" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.94739" cy="273.58109" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.38831" cy="291.833" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="118.78499" cy="305.75825" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="114.34932" cy="290.6473" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="159.95935" cy="267.39197" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="123.74427" cy="286.75078" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="159.48827" cy="285.21875" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="147.89484" cy="257.70935" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="154.64589" cy="253.85903" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="124.58492" cy="271.29588" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="171.372" cy="275.89516" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="146.25832" cy="251.70632" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="117.30328" cy="249.7712" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="111.29041" cy="261.60626" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="136.7162" cy="257.37099" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="140.45582" cy="250.23659" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.00673" cy="275.73326" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="112.46737" cy="293.52062" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="159.16506" cy="257.13651" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="201.93975" cy="227.69476" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="171.92094" cy="211.95666" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.27056" cy="228.52808" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="94.91591" cy="283.2848" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="114.71682" cy="290.61867" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="116.27692" cy="285.46195" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="119.70754" cy="274.2171" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="139.38767" cy="250.52382" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="138.47699" cy="272.45777" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="134.35825" cy="281.65146" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="160.11322" cy="245.71511" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="141.54684" cy="230.38119" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="121.25369" cy="285.57614" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="87.08864" cy="307.50645" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="97.50229" cy="273.47757" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="113.74672" cy="293.62437" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="95.32186" cy="308.47653" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="114.72499" cy="287.77815" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="117.04584" cy="280.3445" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="129.39597" cy="262.05346" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="147.61304" cy="232.75306" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="131.93554" cy="259.72196" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="132.75016" cy="225.50334" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+<circle cx="85.53593" cy="262.33184" r="2" style="stroke: #194393; stroke-width: 1; fill: none; stroke-linecap: square; "></circle>
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath6">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath6)">
+<path d="M49.82014 354.3327L276.00359 354.3327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M276.00359 354.3327L276.00359 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 127.75939L276.00359 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 354.3327L49.82014 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 354.3327L276.00359 354.3327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M69.71511 354.3327L69.71511 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 64.21511, 374.4327)">
+<text textLength="11" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x00002D;&#x000032;</text>
+</g>
+<path d="M132.05502 354.3327L132.05502 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 128.55501, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000030;</text>
+</g>
+<path d="M194.39492 354.3327L194.39492 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 190.89492, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000032;</text>
+</g>
+<path d="M256.73482 354.3327L256.73482 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 253.23482, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000034;</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 153.41007, 396.4327)">
+<text textLength="20" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 13px; font-weight: bold; white-space: pre; ">&#x000057;&#x000031;</text>
+</g>
+<path d="M49.82014 354.3327L49.82014 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 334.40344L44.22978 334.40344" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 29.7358, 338.40344)">
+<text textLength="11" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x00002D;&#x000032;</text>
+</g>
+<path d="M49.82014 271.95608L44.22978 271.95608" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 275.95608)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000030;</text>
+</g>
+<path d="M49.82014 209.50873L44.22978 209.50873" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 213.50873)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000032;</text>
+</g>
+<path d="M49.82014 147.06137L44.22978 147.06137" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 151.06137)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000034;</text>
+</g>
+<g transform="matrix(0, -1, 1, 0, 12.75989, 249.04605)">
+<text textLength="16" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 13px; font-weight: bold; white-space: pre; ">&#x000056;&#x000031;</text>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath7">
+<rect x="49" y="127" width="228" height="228" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath7)">
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath8">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath8)">
+</g>
+</g>
+</g>
+</g>
+<g fill-opacity="0" stroke-opacity="0">
+<title>Procedimiento SGRender</title>
+<rect x="0" y="0" width="575" height="575" style="fill: #FFFFFF; "></rect>
+<rect x="0" y="0" width="575" height="575" style="fill: #FFFFFF; "></rect>
+<rect x="0" y="0" width="575" height="575" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></rect>
+<g transform="matrix(1, 0, 0, 1, 11, 11)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath9">
+<rect x="-1" y="-1" width="555" height="555" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath9)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath10">
+<rect x="-1" y="-1" width="555" height="24" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath10)">
+<g transform="matrix(1, 0, 0, 1, 150, 0)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath11">
+<rect x="-1" y="-1" width="255" height="19" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath11)">
+<text textLength="247" lengthAdjust="spacingAndGlyphs" x="3.5" y="13.5791" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 15px; font-weight: bold; white-space: pre; ">&#x000050;&#x000075;&#x00006E;&#x000074;&#x000075;&#x000061;&#x000063;&#x000069;&#x00006F;&#x00006E;&#x000065;&#x000073;&#x000020;&#x000064;&#x000065;&#x000020;&#x000076;&#x000061;&#x000072;&#x000069;&#x000061;&#x000062;&#x00006C;&#x000065;&#x000020;&#x000063;&#x000061;&#x00006E;&#x0000F3;&#x00006E;&#x000069;&#x000063;&#x000061;</text>
+</g>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 23)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath12">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath12)">
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath13">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath13)">
+<rect x="0" y="0" width="276" height="530" style="fill: #FFFFFF; "></rect>
+<rect x="50.31834" y="128.25845" width="225.18704" height="225.57518" style="fill: #FFFFFF; "></rect>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath14">
+<rect x="49" y="127" width="228" height="228" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath14)">
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath15">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath15)">
+<path d="M49.82014 354.3327L276.00359 354.3327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M276.00359 354.3327L276.00359 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 127.75939L276.00359 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 354.3327L49.82014 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 354.3327L276.00359 354.3327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M69.71511 354.3327L69.71511 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 64.21511, 374.4327)">
+<text textLength="11" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x00002D;&#x000032;</text>
+</g>
+<path d="M132.05502 354.3327L132.05502 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 128.55501, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000030;</text>
+</g>
+<path d="M194.39492 354.3327L194.39492 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 190.89492, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000032;</text>
+</g>
+<path d="M256.73482 354.3327L256.73482 359.9327" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 253.23482, 374.4327)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000034;</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 153.41007, 396.4327)">
+<text textLength="20" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 13px; font-weight: bold; white-space: pre; ">&#x000057;&#x000031;</text>
+</g>
+<path d="M49.82014 354.3327L49.82014 127.75939" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<path d="M49.82014 334.40344L44.22978 334.40344" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 29.7358, 338.40344)">
+<text textLength="11" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x00002D;&#x000032;</text>
+</g>
+<path d="M49.82014 271.95608L44.22978 271.95608" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 275.95608)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000030;</text>
+</g>
+<path d="M49.82014 209.50873L44.22978 209.50873" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 213.50873)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000032;</text>
+</g>
+<path d="M49.82014 147.06137L44.22978 147.06137" style="stroke: #6D6D6D; stroke-width: 1; fill: none; "></path>
+<g transform="matrix(1, 0, 0, 1, 33.7358, 151.06137)">
+<text textLength="7" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font5', 'Albany AMT', sans-serif; font-size: 12px; white-space: pre; ">&#x000034;</text>
+</g>
+<g transform="matrix(0, -1, 1, 0, 12.75989, 249.04605)">
+<text textLength="16" lengthAdjust="spacingAndGlyphs" x="0" y="0.5" style="fill: #111111; font-family: 'SVG_web_346f42d1_e9ad_20_Albany AMT Font3', 'Albany AMT', sans-serif; font-size: 13px; font-weight: bold; white-space: pre; ">&#x000056;&#x000031;</text>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath16">
+<rect x="49" y="127" width="228" height="228" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath16)">
+</g>
+<defs>
+<clipPath id="SVG_web_346f42d1_e9ad_20_ClipPath17">
+<rect x="-1" y="-1" width="278" height="532" ></rect>
+</clipPath>
+</defs>
+<g clip-path="url(#SVG_web_346f42d1_e9ad_20_ClipPath17)">
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<rect x="0" y="0" width="576" height="576" fill="#FFFFFF" fill-opacity="0" aria-hidden="true">
+<desc>Procedimiento SGRender</desc>
+</rect>
+</g>
+<g id="SVG_web_346f42d1_e9ad_20_singleTip1" visibility="hidden" pointer-events="none">
+   <rect id="SVG_web_346f42d1_e9ad_20_singleBox1" x="0" y="0" width="88" height="20" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.95999" opacity="0.8"></rect>
+   <text id="SVG_web_346f42d1_e9ad_20_singleText1" x="5" y="9" font-family="'Albany AMT', sans-serif" font-size="7"><tspan id="SVG_web_346f42d1_e9ad_20_tiptspan1" x="4" class="tiptext"><![CDATA[ ]]></tspan></text>
+</g>
+<defs>
+<style type="text/css"><![CDATA[
+    tspan.tiptext { white-space: pre }
+]]></style>
+</defs>
+<defs>
+<style type="text/css"><![CDATA[
+  @font-face {
+      font-family: "SVG_web_346f42d1_e9ad_20_Albany AMT Font3";
+      font-weight: bold;
+      src: url("#SVG_web_346f42d1_e9ad_20_Font3") format("svg")
+      }
+]]></style>
+<font id="SVG_web_346f42d1_e9ad_20_Font3" horiz-adv-x="3648" >
+   <font-face      font-family="SVG_web_346f42d1_e9ad_20_Albany AMT Font3"
+    font-weight="bold"    units-per-em="2048" ascent="1854" descent="-434" >
+      <font-face-src>
+         <font-face-name name="SVG_web_346f42d1_e9ad_20_Albany AMT Font3"></font-face-name>
+      </font-face-src>
+   </font-face>
+<missing-glyph><path d="M0 0v4992h3456v-4992h-3456" fill="none"></path>
+</missing-glyph>
+<glyph unicode="&#40;" horiz-adv-x="680" 
+d="M640 -252L524 -341Q294 -107 189 104 T85 576Q85 832 187 1042 T524 1493L640 
+1404Q517 1245 450 1024 T384 578Q384 328 448 112 T640 -252Z" ></glyph>
+<glyph unicode="&#47;" horiz-adv-x="552" 
+d="M565 1450L208 0L-10 0L346 1450L565 1450Z" ></glyph>
+<glyph unicode="&#104;" horiz-adv-x="1232" 
+d="M1109 0L810 0L810 594Q810 810 662 810 Q530 810 426 640 L426 0L128 
+0L128 1493L426 1493L426 896Q555 1066 759 1066 Q919 1066 1014 970 T1109 700Z" ></glyph>
+<glyph unicode="&#65;" horiz-adv-x="1402" 
+d="M1493 0L1172 0L1027 384L466 384L320 0L0 0L594 1450L898 1450L1493 
+0ZM930 640L746 1124L562 640L930 640Z" ></glyph>
+<glyph unicode="&#103;" horiz-adv-x="1232" 
+d="M1109 48Q1109 -180 965 -303 T557 -426Q321 -426 128 -298 L192 -85Q365 -170 536 
+-170 Q668 -170 739 -111 T810 60L810 128Q692 0 513 0 Q325 0 205 141 T
+85 521Q85 774 206 920 T525 1066Q605 1066 683 1031 T810 938L810 1066L1109 
+1066L1109 48ZM810 384L810 682Q722 810 594 810 Q502 810 443 735 T384 528Q
+384 400 441 328 T594 256Q719 256 810 384Z" ></glyph>
+<glyph unicode="&#80;" horiz-adv-x="1360" 
+d="M128 1450L742 1450Q996 1450 1138 1329 T1280 987Q1280 762 1137 637 T744 512L
+426 512L426 0L128 0L128 1450ZM426 768L722 768Q844 768 913 826 T981 
+984Q981 1080 912 1137 T722 1194L426 1194L426 768Z" ></glyph>
+<glyph unicode="&#117;" horiz-adv-x="1232" 
+d="M1109 0L810 0L810 194Q682 0 479 0 Q318 0 223 97 T128 366L128 1066L
+426 1066L426 471Q426 256 574 256 Q706 256 810 426 L810 1066L1109 1066L1109 
+0Z" ></glyph>
+<glyph unicode="&#110;" horiz-adv-x="1232" 
+d="M1109 0L810 0L810 594Q810 810 662 810 Q530 810 426 658 L426 0L128 
+0L128 1066L426 1066L426 896Q555 1066 759 1066 Q919 1066 1014 970 T1109 700Z" ></glyph>
+<glyph unicode="&#116;" horiz-adv-x="680" 
+d="M725 85Q633 0 527 0 Q353 0 262 84 T170 326L170 810L42 810L42 1066L
+170 1066L170 1408L469 1408L469 1066L682 1066L682 810L469 810L469 392Q469 
+328 494 292 T563 256Q614 256 661 298 Z" ></glyph>
+<glyph unicode="&#97;" horiz-adv-x="1147" 
+d="M1077 0L778 0Q725 70 725 128 Q586 0 392 0 Q249 0 167 85 T85 311Q
+85 413 139 489 T301 611T557 669L725 682L725 699Q725 853 529 853 Q468 
+853 369 828 T192 768L128 981Q228 1018 357 1042 T588 1066Q802 1066 913 965 T
+1024 670L1024 248Q1024 100 1077 0ZM725 341L725 512Q573 494 537 487 T461 
+457T403 398T384 320Q384 275 411 244 T486 213Q618 213 725 341Z" ></glyph>
+<glyph unicode="&#99;" horiz-adv-x="1147" 
+d="M1066 128Q892 0 664 0 Q396 0 240 144 T85 535Q85 780 242 923 T666 
+1066Q877 1066 1066 938 L1024 725Q848 810 679 810 Q561 810 472 739 T384 534Q
+384 400 471 328 T675 256Q857 256 1024 341 Z" ></glyph>
+<glyph unicode="&#105;" horiz-adv-x="552" 
+d="M276 1493Q336 1493 381 1449 T426 1342Q426 1282 382 1238 T276 1194Q214 1194 
+171 1238 T128 1342Q128 1405 171 1449 T276 1493ZM426 0L128 0L128 1066L426 
+1066L426 0Z" ></glyph>
+<glyph unicode="&#111;" horiz-adv-x="1232" 
+d="M618 1066Q858 1066 1005 925 T1152 533Q1152 282 1005 141 T618 0Q377 0 231 
+141 T85 533Q85 784 231 925 T618 1066ZM618 256Q724 256 789 331 T853 533Q
+853 660 790 735 T618 810Q505 810 444 738 T384 533Q384 404 445 330 T618 
+256Z" ></glyph>
+<glyph unicode="&#101;" horiz-adv-x="1147" 
+d="M1066 128Q888 0 655 0 Q394 0 239 146 T85 535Q85 774 223 920 T590 
+1066Q800 1066 933 916 T1066 499L1066 426L384 426Q398 353 475 304 T661 256Q
+832 256 1002 341 ZM768 640Q757 738 706 795 T582 853Q504 853 449 795 T384 
+640Z" ></glyph>
+<glyph unicode="&#115;" horiz-adv-x="1147" 
+d="M960 725Q779 810 609 810 Q426 810 426 762 Q426 738 477 723 T650 664Q894 
+568 980 496 T1066 319Q1066 0 548 0 Q312 0 85 85 L149 341Q334 256 530 
+256 Q768 256 768 314 Q768 336 713 371 T530 446Q311 510 219 583 T128 761Q
+128 901 249 983 T593 1066Q806 1066 1024 981 Z" ></glyph>
+<glyph unicode="&#32;" horiz-adv-x="552" 
+></glyph>
+<glyph unicode="&#100;" horiz-adv-x="1232" 
+d="M1109 0L810 0L810 144Q690 0 511 0 Q324 0 204 140 T85 514Q85 769 
+204 917 T511 1066Q700 1066 810 923 L810 1493L1109 1493L1109 0ZM810 382L810 
+692Q724 810 592 810 Q501 810 442 735 T384 528Q384 400 441 328 T594 256Q
+717 256 810 382Z" ></glyph>
+<glyph unicode="&#118;" horiz-adv-x="1147" 
+d="M1162 1066L734 0L418 0L-10 1066L261 1066L576 283L890 1066L1162 1066Z" ></glyph>
+<glyph unicode="&#114;" horiz-adv-x="807" 
+d="M810 1024L746 768Q706 810 662 810 Q613 810 567 780 T474 673T426 582L426 
+0L128 0L128 1066L426 1066L426 853Q482 970 540 1018 T682 1066Q759 1066 
+810 1024Z" ></glyph>
+<glyph unicode="&#98;" horiz-adv-x="1232" 
+d="M426 914Q474 982 557 1024 T726 1066Q912 1066 1032 926 T1152 554Q1152 297 1032 
+148 T726 0Q537 0 426 142 L426 0L128 0L128 1493L426 1493L426 914ZM426 
+374Q513 256 646 256 Q736 256 795 332 T853 537Q853 670 794 740 T643 810Q
+520 810 426 684 Z" ></glyph>
+<glyph unicode="&#108;" horiz-adv-x="552" 
+d="M426 0L128 0L128 1493L426 1493L426 0Z" ></glyph>
+<glyph unicode="&#243;" horiz-adv-x="1232" 
+d="M618 1066Q858 1066 1005 925 T1152 533Q1152 282 1005 141 T618 0Q377 0 231 
+141 T85 533Q85 784 231 925 T618 1066ZM618 256Q724 256 789 331 T853 533Q
+853 660 790 735 T618 810Q505 810 444 738 T384 533Q384 404 445 330 T618 
+256ZM938 1493L646 1194L469 1194L628 1493L938 1493Z" ></glyph>
+<glyph unicode="&#87;" horiz-adv-x="1912" 
+d="M1920 1450L1515 0L1173 0L960 1083L702 0L346 0L0 1450L306 1450L533 
+362L792 1450L1172 1450L1386 362L1657 1450L1920 1450Z" ></glyph>
+<glyph unicode="&#49;" horiz-adv-x="1147" 
+d="M853 0L554 0L554 1119Q432 981 170 981 L170 1237Q478 1237 597 1450 L853 
+1450L853 0Z" ></glyph>
+<glyph unicode="&#86;" horiz-adv-x="1360" 
+d="M1322 1450L875 0L446 0L0 1450L314 1450L661 322L1009 1450L1322 1450Z" ></glyph>
+</font>
+<style type="text/css"><![CDATA[
+  @font-face {
+      font-family: "SVG_web_346f42d1_e9ad_20_Albany AMT Font5";
+      src: url("#SVG_web_346f42d1_e9ad_20_Font5") format("svg")
+      }
+]]></style>
+<font id="SVG_web_346f42d1_e9ad_20_Font5" horiz-adv-x="3776" >
+   <font-face      font-family="SVG_web_346f42d1_e9ad_20_Albany AMT Font5"
+    units-per-em="2048" ascent="1854" descent="-434" >
+      <font-face-src>
+         <font-face-name name="SVG_web_346f42d1_e9ad_20_Albany AMT Font5"></font-face-name>
+      </font-face-src>
+   </font-face>
+<missing-glyph><path d="M0 0v4992h3456v-4992h-3456" fill="none"></path>
+</missing-glyph>
+<glyph unicode="&#40;" horiz-adv-x="680" 
+d="M597 -294L524 -341Q317 -110 222 101 T128 576Q128 838 222 1050 T524 1493L597 
+1446Q444 1242 371 1034 T298 578Q298 332 369 124 T597 -294Z" ></glyph>
+<glyph unicode="&#47;" horiz-adv-x="552" 
+d="M565 1450L122 0L-10 0L432 1450L565 1450Z" ></glyph>
+<glyph unicode="&#104;" horiz-adv-x="1147" 
+d="M1024 0L853 0L853 650Q853 766 790 831 T620 896Q451 896 298 725 L298 
+0L128 0L128 1493L298 1493L298 896Q470 1066 662 1066 Q830 1066 927 973 T
+1024 708Z" ></glyph>
+<glyph unicode="&#65;" horiz-adv-x="1360" 
+d="M1333 0L1153 0L946 512L375 512L169 0L-10 0L573 1450L749 1450L1333 
+0ZM878 682L661 1222L444 682L878 682Z" ></glyph>
+<glyph unicode="&#103;" horiz-adv-x="1147" 
+d="M1024 -22Q1024 -220 904 -323 T562 -426Q336 -426 128 -298 L192 -170Q395 -256 
+574 -256 Q706 -256 780 -187 T853 6L853 170Q736 0 538 0 Q328 0 206 147 T
+85 554Q85 782 211 924 T526 1066Q738 1066 853 938 L853 1066L1024 1066L1024 
+-22ZM853 361L853 768Q816 822 737 859 T566 896Q418 896 337 802 T256 538Q
+256 364 341 267 T573 170Q631 170 694 200 T805 285T853 341Z" ></glyph>
+<glyph unicode="&#45;" horiz-adv-x="680" 
+d="M597 426L85 426L85 597L597 597L597 426Z" ></glyph>
+<glyph unicode="&#50;" horiz-adv-x="1147" 
+d="M1024 0L85 0L85 152Q336 390 502 539 T760 802T853 1035Q853 1148 771 
+1214 T559 1280Q380 1280 180 1194 L128 1365Q338 1450 566 1450 Q770 1450 897 1335 T
+1024 1039Q1024 904 941 773 T682 480L346 170L1024 170L1024 0Z" ></glyph>
+<glyph unicode="&#48;" horiz-adv-x="1147" 
+d="M1066 734Q1066 358 943 178 T576 0Q329 0 207 180 T85 734Q85 1092 207 
+1271 T576 1450Q820 1450 943 1271 T1066 734ZM575 170Q734 170 815 296 T896 726Q
+896 1014 820 1147 T573 1280Q414 1280 335 1141 T256 726Q256 448 336 309 T575 
+170Z" ></glyph>
+<glyph unicode="&#52;" horiz-adv-x="1147" 
+d="M1066 298L853 298L853 0L682 0L682 298L42 298L42 469L674 1450L853 
+1450L853 469L1066 469L1066 298ZM682 469L682 1157L240 469L682 469Z" ></glyph>
+</font>
+</defs>
+</svg>
+</div>
+</article>
+</section>
+</div>
+</body>
+</html>
