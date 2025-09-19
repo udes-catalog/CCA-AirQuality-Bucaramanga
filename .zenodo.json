@@ -1,0 +1,52 @@
+{
+  "title": "Bucaramanga Air Quality Data for Canonical Correlation Analysis",
+  "upload_type": "dataset",
+  "description": "This dataset contains air quality and meteorological data collected in Bucaramanga, Colombia, for Canonical Correlation Analysis (CCA) of atmospheric pollutants (O₃, PM2.5, PM10, SO₂) and meteorological variables (wind speed, air temperature, relative humidity) from multiple monitoring stations (2021–2023). The data supports the analyses in the manuscript 'Canonical Correlation Analysis on Air Pollutants: A Study on Suburban Areas of the Northeast Andean Mountains' (Torres et al., 2025, submitted to Smart Cities).",
+  "creators": [
+    {
+      "name": "Torres, July",
+      "affiliation": "Universidad de Santander"
+    },
+    {
+      "name": "Rodríguez, Diego",
+      "affiliation": "Universidad de Santander"
+    },
+    {
+      "name": "Perez, Miguel",
+      "affiliation": "Universidad de Santander"
+    },
+    {
+      "name": "León, Francisco",
+      "affiliation": "Universidad de Santander"
+    },
+    {
+      "name": "Rincon-Yanez, Diego",
+      "affiliation": "Universidad de Santander"
+    }
+  ],
+  "keywords": [
+    "Air Quality",
+    "Bucaramanga",
+    "Canonical Correlation Analysis",
+    "Atmospheric Pollutants",
+    "Meteorology",
+    "FAIR data",
+    "Open Science"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/udes-catalog/CCA-AirQuality-Bucaramanga",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.17160528",
+      "relation": "isIdenticalTo",
+      "scheme": "doi"
+    }
+  ],
+  "version": "1.0",
+  "language": "eng"
+}

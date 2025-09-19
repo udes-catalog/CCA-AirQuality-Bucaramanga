@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Bucaramanga Air Quality Data for Canonical Correlation Analysis",
+  "description": "This dataset contains air quality and meteorological data collected in Bucaramanga, Colombia, for Canonical Correlation Analysis (CCA) of atmospheric pollutants (O₃, PM2.5, PM10, SO₂) and meteorological variables (wind speed, air temperature, relative humidity) from multiple monitoring stations (2021–2023). The data supports the analyses in the manuscript 'Canonical Correlation Analysis on Air Pollutants: A Study on Suburban Areas of the Northeast Andean Mountains' (Torres et al., 2025, submitted to Smart Cities).",
+  "url": "https://github.com/udes-catalog/CCA-AirQuality-Bucaramanga",
+  "keywords": [
+    "Air Quality",
+    "Bucaramanga",
+    "Canonical Correlation Analysis",
+    "Atmospheric Pollutants",
+    "Meteorology",
+    "FAIR data",
+    "Open Science"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "July Torres",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Santander"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Rodríguez",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Santander"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Miguel Perez",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Santander"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Francisco León",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Santander"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Rincon-Yanez",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Santander"
+      }
+    }
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://doi.org/10.5281/zenodo.17160528",
+    "encodingFormat": "text/csv"
+  },
+  "version": "1.0",
+  "datePublished": "2025-09-15",
+  "identifier": "https://doi.org/10.5281/zenodo.17160528"
+}

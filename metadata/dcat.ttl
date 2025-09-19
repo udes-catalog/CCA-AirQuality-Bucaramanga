@@ -1,0 +1,46 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.5281/zenodo.17160528>
+    a dcat:Dataset ;
+    dct:title "Bucaramanga Air Quality Data for Canonical Correlation Analysis" ;
+    dct:description "This dataset contains air quality and meteorological data collected in Bucaramanga, Colombia, for Canonical Correlation Analysis (CCA) of atmospheric pollutants (O₃, PM2.5, PM10, SO₂) and meteorological variables (wind speed, air temperature, relative humidity) from multiple monitoring stations (2021–2023). The data supports the analyses in the manuscript 'Canonical Correlation Analysis on Air Pollutants: A Study on Suburban Areas of the Northeast Andean Mountains' (Torres et al., 2025, submitted to Smart Cities)." ;
+    dct:creator [
+        a foaf:Person ;
+        foaf:name "July Torres" ;
+        foaf:affiliation "Universidad de Santander"
+    ], [
+        a foaf:Person ;
+        foaf:name "Diego Rodríguez" ;
+        foaf:affiliation "Universidad de Santander"
+    ], [
+        a foaf:Person ;
+        foaf:name "Miguel Perez" ;
+        foaf:affiliation "Universidad de Santander"
+    ], [
+        a foaf:Person ;
+        foaf:name "Francisco León" ;
+        foaf:affiliation "Universidad de Santander"
+    ], [
+        a foaf:Person ;
+        foaf:name "Diego Rincon-Yanez" ;
+        foaf:affiliation "Universidad de Santander"
+    ] ;
+    dct:issued "2025-09-15"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:keyword "Air Quality", "Bucaramanga", "Canonical Correlation Analysis", "Atmospheric Pollutants", "Meteorology", "FAIR data", "Open Science" ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcat:accessURL <https://doi.org/10.5281/zenodo.17160528> ;
+        dcat:mediaType "text/csv" ;
+        dcat:downloadURL <https://zenodo.org/records/17160529>
+    ] ;
+    dcat:landingPage <https://github.com/udes-catalog/CCA-AirQuality-Bucaramanga> ;
+    dct:publisher [
+        a foaf:Organization ;
+        foaf:name "Universidad de Santander"
+    ] ;
+    dcat:version "1.0" .
